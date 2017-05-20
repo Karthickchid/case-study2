@@ -1,0 +1,99 @@
+
+DROP TABLE common_employee CASCADE CONSTRAINTS;
+DROP TABLE date_employee CASCADE CONSTRAINTS;
+DROP TABLE mbu_employee CASCADE CONSTRAINTS;
+DROP TABLE refer_employee CASCADE CONSTRAINTS;
+DROP TABLE reg_employee CASCADE CONSTRAINTS;
+
+
+
+CREATE TABLE common_employee
+(
+	e_id nvarchar2(20) NOT NULL,
+	e_name varchar2(30),
+	dob date,
+	gender varchar2(10),
+	qualification varchar2(20),
+	skill varchar2(20),
+	email_id nvarchar2(50),
+	mobile number(10,0),
+	doj date,
+	password varchar2(30),
+	app_id number NOT NULL,
+	PRIMARY KEY (e_id)
+);
+
+
+
+CREATE TABLE common_employee1
+(
+	e_id nvarchar2(20) NOT NULL,
+	e_name varchar2(30),
+	dob date,
+	gender varchar2(10),
+	qualification varchar2(20),
+	skill varchar2(20),
+	email_id nvarchar2(50),
+	mobile number(10,0),
+	doj date,
+	password varchar2(30),
+	app_id number NOT NULL,
+	PRIMARY KEY (e_id)
+);
+
+
+CREATE TABLE date_employee
+(
+	e_name varchar2(30),
+	dob date,
+	gender varchar2(10),
+	qualification varchar2(20),
+	skill varchar2(20),
+	email_id nvarchar2(50),
+	mobile number(10,0),
+	doj date,
+	app_id number NOT NULL,
+	password varchar2(30)
+);
+
+
+CREATE TABLE mbu_employee
+(
+	e_id nvarchar2(20) NOT NULL,
+	e_name varchar2(30),
+	gender varchar2(10),
+	doj date,
+	system_id varchar2(20)
+);
+
+
+CREATE TABLE refer_employee
+(
+	e_id nvarchar2(20) NOT NULL,
+	e_name varchar2(30),
+	skill varchar2(20),
+	gender varchar2(10),
+	qualification varchar2(20),
+	email_id nvarchar2(50),
+	doj date
+);
+
+
+CREATE TABLE reg_employee
+(
+	e_name varchar2(30),
+	dob date,
+	gender varchar2(10),
+	qualification varchar2(20),
+	skill varchar2(20),
+	blood_group varchar2(6),
+	email_id nvarchar2(50),
+	mobile number(10,0),
+	address nvarchar2(100),
+	password varchar2(30),
+	app_id number NOT NULL,
+	PRIMARY KEY (app_id)
+);
+
+
+

@@ -1,0 +1,10 @@
+	SimpleDateFormat sf = new SimpleDateFormat("dd-MM-yyyy");
+			java.sql.Date sd = null;
+			try {
+				java.util.Date ud = sf.parse(p.getDob());
+				sd = new java.sql.Date(ud.getTime());
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			;

@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: blink;
+}
+
+a:active {
+    text-decoration: blink;
+}

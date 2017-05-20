@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login</title>
+<script >
+
+
+function validateReg() 
+{
+var username=document.log.username.value;
+  if(username==null || username == "" || username==" "|| name.username <3)
+    {
+    alert("Please Enter Username Correctly");
+        return false;
+    }
+    
+    var password = document.log.password.value;
+    if (password==null || password == "" || password==" "|| password.length <6) {
+        alert("Enter password.. Minimum 6 characters");
+        return false;
+    }
+    }
+</script>
+<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<body  background="1995-9.jpg" >
+
+<form action="Home.jsp">
+<button class="" type="submit">Home</button>
+</form>
+
+<form action="LoginController" method="post" name="log" onsubmit="return validateReg()">
+		<center><table id="table2">
+			<tr>
+				<td><font color="white"><strong>Username</strong></font></td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td><font color="white"><strong>Password</strong></font></td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td><center><input type="submit" value="SUBMIT"></center></td>
+				<td><center><input type="reset" value="RESET"></center></td>
+			</tr>
+
+		</table>
+		</center>
+
+	</form>
+	
+
+</body>
+</html>
